@@ -1,0 +1,79 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+.features {
+  list-style: none;
+  margin: 0.5rem 0 1rem;
+  padding: 0;
+  flex: 1;
+}
+.features li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+.btn-buy {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-buy:hover {
+  background-color: #2980b9;
+}
