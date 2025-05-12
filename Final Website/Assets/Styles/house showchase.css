@@ -11,7 +11,6 @@ body {
   padding: 20px;
 }
 
-/* Navigation Bar */
 nav {
   display: flex;
   justify-content: flex-start;
@@ -46,14 +45,12 @@ nav .home-btn svg {
   fill: currentColor;
 }
 
-/* Page Title */
 h1 {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 40px;
 }
 
-/* Container & Cards Layout */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -100,7 +97,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;

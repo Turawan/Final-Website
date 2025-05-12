@@ -152,7 +152,6 @@ header{
 .sales .box p{
   font-size: 00.938rem;
 }
-/* Properties edit style */
 .heading{
   text-align: center;
   margin-bottom: 2rem;
@@ -259,15 +258,12 @@ header{
   text-transform: uppercase;
 }
 .footer {
-  text-align: center; /* Center inner content */
+  text-align: center;
 }
 
 .footer-container {
   display: grid;
-  /* 1) Reduce the gap (try 1rem, or even 0.5rem) */
   gap: 1rem;
-
-  /* 2) Change auto → 1fr so columns flexibly fill space */
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   background: var(--main-color);
   color: var(--bg-color);
@@ -410,10 +406,10 @@ header{
     transition: 0.6s;
   }
   .navbar a {
-    display: block;               /* valid display value */
+    display: block;               
     margin: 1rem;
-    padding: 20px;                /* semicolon added */
-    color: var(--bg-color);       /* semicolon added */
+    padding: 20px;               
+    color: var(--bg-color);       
   }
   .navbar a:hover {
     background: var(--main-color);

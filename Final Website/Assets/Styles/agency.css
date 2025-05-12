@@ -1,9 +1,5 @@
-
-        /* agency.css - Modern Agency Card Layout */
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* Global Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +78,6 @@ body {
   background-color: #0051cc;
 }
 
-/* Responsive Typography */
 @media (max-width: 600px) {
   body {
     padding: 20px;
