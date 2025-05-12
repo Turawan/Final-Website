@@ -111,13 +111,32 @@
             </a>
         </div>
     </section>
-    
-    <section class="newslatter container">
-        <h2>Have Question?<br>Let us help you.</h2>
-        <form action="">
-            <input type="email" name="" id="email-box" placeholder="yourmail@gmail.com" required>
-            <input type="submit" value="send" class="btn">
-        </form>
+    <section class="feedback container" id="feedback">
+      <form class="feedback-form" action="#" method="post">
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="field-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Comments..." required></textarea>
+        </div>
+        <div class="field-group rating">
+          <label>Rate Us</label>
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1" checked><label for="star1"></label>
+          </div>
+        </div>
+        <button type="submit" class="btn feedback-btn">Submit Feedback</button>
+      </form>
     </section>
     <section class="footer">
         <div class="footer-container">

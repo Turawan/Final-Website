@@ -472,4 +472,76 @@ header{
     .footer{
     border-radius: 3rem 0 0 0;
   }
+  /* Feedback Section Styles */
+.feedback {
+  padding: 4.5rem 0 3rem;
+  background: #f9faff;
+  border-radius: 1.5rem;
+  margin: 3rem auto;
+}
+.feedback .heading span {
+  font-size: 1rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.feedback .heading h2 {
+  font-size: 1.7rem;
+  margin: 0.5rem 0 1rem;
+}
+.feedback .heading p {
+  font-size: 0.938rem;
+  margin-bottom: 2rem;
+}
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.feedback-form .field-group {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.feedback-form input,
+.feedback-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+.feedback-form .rating {
+  grid-column: 1 / -1;
+}
+.feedback-form .stars {
+  display: flex;
+  gap: 0.5rem;
+}
+.feedback-form .stars input {
+  display: none;
+}
+.feedback-form .stars label {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ccc" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-6 5.847L19.335 24 12 19.897 4.665 24 6 15.27 0 9.423l8.332-1.268z"/></svg>') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+.feedback-form .stars input:checked ~ label,
+.feedback-form .stars label:hover,
+.feedback-form .stars label:hover ~ label {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffc700" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.423l-6 5.847L19.335 24 12 19.897 4.665 24 6 15.27 0 9.423l8.332-1.268z"/></svg>');
+}
+.feedback-btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
 }
