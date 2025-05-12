@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../Assets/Styles/review.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Customer Reviews</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <section class="reviews-container">
+    <div class="reviews-header">
+      <h2>What Our Customers Say</h2>
+      <p>Real feedback from genuine guests</p>
+    </div>
+
+    <div class="swiper reviews-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <p class="comment">
+            "Exceptional stay! The room was spotless, the bed was incredibly comfortable,
+            and the beachfront view was breathtaking. Highly recommend!"
+          </p>
+          <div class="reviewer">
+            <img
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&facepad=4&w=128&h=128"
+              alt="Emily R."
+            />
+            <div class="reviewer-details">
+              <a href="#">Emily R.</a>
+              <span>Travel Blogger</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p class="comment">
+            "Friendly staff, great amenities, and a fantastic pool area perfect
+            for families. We created memories we'll cherish forever!"
+          </p>
+          <div class="reviewer">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=4&w=128&h=128"
+              alt="Michael T."
+            />
+            <div class="reviewer-details">
+              <a href="#">Michael T.</a>
+              <span>Parent & Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p class="comment">
+            "The location is unbeatable steps from the ocean and close to all the best shops.
+            Can’t wait to come back next summer!"
+          </p>
+          <div class="reviewer">
+            <img
+              src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=facearea&facepad=4&w=128&h=128"
+              alt="Sophia L."
+            />
+            <div class="reviewer-details">
+              <a href="#">Sophia L.</a>
+              <span>Student & Explorer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.reviews-swiper', {
+      loop: true,
+      speed: 600,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
